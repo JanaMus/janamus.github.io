@@ -1,0 +1,130 @@
+body{
+    background: rgb(255, 253, 251);
+    color: #282425;
+    font-size: 18px;
+    line-height: 2;
+    font-family: 'Garamond', Arial, sans-serif;
+    text-align: justify;
+    margin: 0;
+}
+
+.header{
+    background: rgb(223, 187, 162);
+    padding: 1%;
+    overflow: auto;
+    margin-bottom: 0;
+}
+
+.footer{
+    background: rgb(223, 187, 162);
+    font-size: 14px;
+    padding: 2% 2%;
+    padding: 2% 0 2% 50%;
+}
+
+h1 {
+    color: #123C69;
+    text-shadow:  1px 1px 1px rgba(0, 0, 0, 0.7); /*move in x, y, blur, color */
+    font-size: 250%;
+    font-family: 'Helvetica', serif;
+    float: right;
+    margin: 4% 30% 0% 3%; 
+}   
+
+h2 {
+    color: rgb(223, 187, 162);
+    background-color: #123C69;
+    font-size: 25px;
+    font-family: 'Helvetica', serif;
+    text-align: left;
+    padding-left: 2%;
+    clear: right;
+}
+
+h3 {
+    color: #123C69;
+    padding: 0 0 0 2%;
+    margin: 2% 0 2% 0;
+}
+
+a{
+    color: black;
+} 
+
+.portrait {
+    width: 15%; 
+    height: 15%;
+    border-radius: 50%;
+    border: 2px solid rgba(0, 0, 0, 0.7);
+    margin: 1%;
+}
+
+.menu {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #282425;
+}
+
+.menu li {
+display: inline-block;
+}
+
+.menu a {
+    color: rgb(255, 253, 251);
+    font-size: 16px;
+    text-decoration: none;
+    padding: 5px;
+    margin: 5px;
+    display: inline-block;
+}
+
+.menu a:hover,
+.menu a:focus,
+.menu a:active {
+    background-color: gray;
+}
+
+table{
+    width: 95%;
+    line-height: 2;  /* space between lines of text */
+    border-spacing: 0;
+    text-align: left;
+    border-collapse: collapse;
+    border-style: hidden;
+    margin: 2%;
+    
+}
+
+table td, table th {
+    border: 3px solid rgb(223, 187, 162);
+    border-bottom: 0;
+    border-top: 0;
+    padding-left: 2%;
+    padding-right: 2%;
+    
+    
+}
+
+table tr td:first-child {
+    width: 15%;
+}
+
+table tr td:last-child {
+    width: 80%;
+}
+
+.work_experience table,
+.scientific_awards table  {
+    line-height: 2.5; 
+}
+
+.space td {
+    padding-bottom: 1%;
+}
+
+.papers li,
+.thesis li {
+    display: inline-block;
+    margin-bottom: 2%;
+}
