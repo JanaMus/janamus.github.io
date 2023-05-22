@@ -47,6 +47,13 @@ h3 {
     margin: 2% 0 1% 0;
 }
 
+p{
+    color: #123C69;
+    font-size: 20px;
+    font-family: 'Helvetica', serif;
+    float: right;
+}
+
 a{
     color: black;
 } 
