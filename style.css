@@ -10,6 +10,7 @@ body{
 
 .header{
     background: rgb(223, 187, 162);
+    background-image: url("DNA.png");
     padding: 1%;
     overflow: auto;
     margin-bottom: 0;
