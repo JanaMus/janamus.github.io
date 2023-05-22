@@ -59,6 +59,11 @@ a{
     margin: 1%;
 }
 
+.background_image {
+    border-radius: 5%;
+    margin: 1%;
+}
+
 .menu {
     margin: 0;
     padding: 0;
