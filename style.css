@@ -62,8 +62,8 @@ a {
 } 
 
 .portrait {
-    width: 15%; 
-    height: 15%;
+    width: 150%; 
+    height: 150%;
     border-radius: 50%;
     border: 2px solid rgba(0, 0, 0, 0.7);
     margin: 1%;
@@ -102,7 +102,7 @@ table {
     width: 95%;
     line-height: 2;  /* space between lines of text */
     border-spacing: 0;
-    text-align: left;
+    text-align: justify;
     border-collapse: collapse;
     border-style: hidden;
     margin: 2%;
