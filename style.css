@@ -67,6 +67,8 @@ a {
     border-radius: 50%;
     border: 2px solid rgba(0, 0, 0, 0.7);
     margin: 1%;
+    float: left;
+
 }
 
 .menu {
