@@ -49,14 +49,13 @@ h3 {
 
 p {
     color: #123C69;
-    font-size: 20px;
     font-family: 'Garamond', Arial, sans-serif;
     text-align: justify;
     margin: 5% 5% 5% 25%; 
 
 }
 
-a{
+a {
     color: black;
 } 
 
@@ -95,7 +94,7 @@ display: inline-block;
     background-color: gray;
 }
 
-table{
+table {
     width: 95%;
     line-height: 2;  /* space between lines of text */
     border-spacing: 0;
