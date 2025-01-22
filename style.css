@@ -65,6 +65,7 @@ a {
     text-align: center;
     background-color: #282425;
     font-family: 'Helvetica', serif;
+    width: 100%;
 }
 
 .menu li {
