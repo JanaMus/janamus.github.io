@@ -65,11 +65,11 @@ a {
     text-align: center;
     background-color: #282425;
     font-family: 'Helvetica', serif;
-    width: 100%;
 }
 
 .menu li {
 display: inline-block;
+gap: 5%;
 }
 
 .menu a {
