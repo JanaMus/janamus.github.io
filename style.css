@@ -12,7 +12,7 @@ body{
     background: rgb(223, 187, 162);
     padding: 1%;
     overflow: auto;
-    margin-bottom: 0;
+    margin: 5%; /* margin-bottom: 0 */
 }
 
 .footer{
@@ -59,7 +59,7 @@ a {
 }
 
 .menu {
-    margin: 0;
+    margin: 5%; /* 0 */
     padding: 5%; /* 0 */
     text-align: center;
     background-color: #282425;
