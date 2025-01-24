@@ -18,7 +18,6 @@ body{
 .footer{
     background: rgb(223, 187, 162);
     font-size: 14px;
-    padding: 2% 2%;
     padding: 2% 0 2% 50%;
 }
 
@@ -60,7 +59,7 @@ a {
 }
 
 .menu {
-    margin: 1%;
+    margin: 0;/* 1% */
     padding: 0;
     text-align: center;
     background-color: #282425;
