@@ -12,7 +12,7 @@ body{
     background: rgb(223, 187, 162);
     padding: 1%;
     overflow: auto;
-    margin: 5%; /* margin-bottom: 0 */
+    margin: 2%; /* margin-bottom: 0 */
 }
 
 .footer{
@@ -27,7 +27,7 @@ h1 {
     font-size: 250%;
     font-family: 'Helvetica', serif;
     float: right;
-    margin: 4% 30% 0% 3%; 
+    margin: 4% 30% 2% 3%; /*4% 30% 0% 3%; */
 }   
 
 h2 {
