@@ -86,6 +86,11 @@ display: inline-block;
     background-color: gray;
 }
 
+p {
+    font-size: 16px;
+    color: #eb0909;
+}
+
 table {
     width: 95%;
     line-height: 2;  /* space between lines of text */
