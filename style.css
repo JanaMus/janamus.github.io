@@ -51,6 +51,18 @@ a {
     color: black;
 } 
 
+a i {
+    font-size: 50px; /* Adjust size as needed */
+    color: black; /* Default color */
+    margin: 10px; /* Adds space between icons */
+    transition: color 0.3s, transform 0.2s;
+}
+
+a i:hover {
+    color: gray; /* Change color on hover */
+    transform: scale(1.1); /* Slightly enlarges on hover */
+}
+
 .portrait {
     width: 110%; 
     aspect-ratio: 1 / 1;
