@@ -99,7 +99,7 @@ display: inline-block;
 }
 
 .social-icons i {
-    font-size: 30px; /* Same size for GitHub & LinkedIn */
+    font-size: 35px; /* Same size for GitHub & LinkedIn */
     color: black;
     transition: color 0.3s, transform 0.2s;
 }
@@ -109,9 +109,13 @@ display: inline-block;
     transform: scale(1.1);
 }
 
+.social-icons a[href*="linkedin"] i {
+    color: #0077b5; /* LinkedIn blue */
+}
+
 .icon-img {
-    width: 30px; /* Same size as GitHub & LinkedIn icons */
-    height: 30px; /* Ensures uniform size */
+    width: 35px; /* Same size as GitHub & LinkedIn icons */
+    height: 35px; /* Ensures uniform size */
     object-fit: contain; /* Ensures SVGs stay sharp */
     transition: transform 0.2s ease-in-out;
 }
