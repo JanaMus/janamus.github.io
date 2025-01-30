@@ -1,7 +1,7 @@
 body{
     background: rgb(255, 253, 251);
     color: #282425;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 2;
     font-family: 'Garamond', Arial, sans-serif;
     text-align: justify;
@@ -17,7 +17,7 @@ body{
 
 .footer{
     background: rgb(223, 187, 162);
-    font-size: 14px;
+    font-size: 13px;
     padding: 2% 0 2% 50%;
 }
 
