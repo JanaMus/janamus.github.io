@@ -169,3 +169,18 @@ table tr td:last-child {
 .thesis li {
     margin-bottom: 1%;
 }
+
+.journalpapers ul {
+    margin-left: 5%; 
+    padding-left: 2%;
+}
+
+.conferencepapers ul {
+    margin-left: 2%; 
+    padding-left: 0;
+}
+
+.thesis ul {
+    margin-left: 0; 
+    padding-left: 5%;
+}
