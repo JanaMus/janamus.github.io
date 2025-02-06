@@ -167,6 +167,7 @@ table tr td:last-child {
 .journalpapers li,
 .conferencepapers li,
 .thesis li {
-    margin-bottom: 5%;
+    margin-bottom: 2%;
+    margin-left: 2%;
 }
 
