@@ -169,7 +169,10 @@ table tr td:last-child {
 .skills_compbio li,
 .skills_it li,
 .skills_soft li,
-.skills_languages li,
+.skills_languages li {
+    margin-left: 2%;
+}
+
 .journalpapers li,
 .conferencepapers li,
 .thesis li {
