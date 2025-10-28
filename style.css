@@ -168,17 +168,15 @@ table tr td:last-child {
 .skills {
     width: 90%;
     margin: 1% 5%;
-    padding-left: 4%;        /* posun odrážek víc doprava */
+    padding-left: 4%;       
     list-style-type: disc;
 }
 
-.skills li {
-    margin-bottom: 0.5em;
-    line-height: 1.8;
-    text-align: justify;
-}
 
-
+.skills_compbio li,
+.skills_it li,
+.skills_soft li,
+.skills_languages li,
 .journalpapers li,
 .conferencepapers li,
 .thesis li {
