@@ -165,14 +165,14 @@ table tr td:last-child {
     padding-bottom: 1%;
 }
 
-.skills-list {
+.skills {
     width: 90%;
     margin: 1% 5%;
     padding-left: 4%;        /* posun odrážek víc doprava */
     list-style-type: disc;
 }
 
-.skills-list li {
+.skills li {
     margin-bottom: 0.5em;
     line-height: 1.8;
     text-align: justify;
