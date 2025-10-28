@@ -165,18 +165,6 @@ table tr td:last-child {
     padding-bottom: 1%;
 }
 
-.skills {
-    width: 90%;
-    margin: 1% 5%;
-    padding-left: 4%;       
-    list-style-type: disc;
-}
-
-.skills li {
-    margin-bottom: 0.5em;
-    line-height: 1.8;
-    text-align: justify;
-}
 
 .skills_compbio li,
 .skills_it li,
