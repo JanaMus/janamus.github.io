@@ -62,13 +62,14 @@
 
       <ul class="stats" aria-label="Research record">
         <li><b>300K€</b><span>awarded as PI</span></li>
-        <li id="m-works" hidden><b></b><span>indexed works</span></li>
+        <li><b>13</b><span>journal articles</span></li>
         <li id="m-cites" hidden><b></b><span>citations</span></li>
         <li id="m-h" hidden><b></b><span>h-index</span></li>
       </ul>
       <p class="stats__src" id="m-src" hidden>
-        Live from <a href="https://openalex.org/" target="_blank" rel="noopener">OpenAlex</a>.
-        Google&nbsp;Scholar counts more sources and reports higher figures.
+        Citation metrics live from <a href="https://openalex.org/A5018138274" target="_blank" rel="noopener">OpenAlex</a>.
+        <a href="https://scholar.google.cz/citations?user=ZM2w96EAAAAJ" target="_blank" rel="noopener">Google&nbsp;Scholar</a>
+        indexes more sources and reports higher figures.
       </p>
 
       <ul class="links" aria-label="Contact and profiles">
@@ -739,8 +740,7 @@
      tiles stay hidden — a missing number beats a stale one. */
   (function () {
     var ORCID = '0000-0001-6910-6047';
-    var url = 'https://api.openalex.org/authors/orcid:' + ORCID +
-              '?select=works_count,cited_by_count,summary_stats';
+    var url = 'https://api.openalex.org/authors/orcid:' + ORCID;
 
     function fill(id, value) {
       if (typeof value !== 'number' || !isFinite(value) || value <= 0) return false;
@@ -756,7 +756,6 @@
       .then(function (d) {
         var s = d.summary_stats || {};
         var shown = [
-          fill('m-works', d.works_count),
           fill('m-cites', d.cited_by_count),
           fill('m-h', s.h_index)
         ].some(Boolean);
