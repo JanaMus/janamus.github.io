@@ -60,8 +60,28 @@ body {
   font-family: var(--font-serif);
   font-size: 1.0625rem;      /* 17px */
   line-height: 1.65;
-  text-align: left;          /* justify caused rivers of whitespace */
+  text-align: justify;
+  /* justification without hyphenation opens rivers of whitespace, so both go together;
+     hyphens: auto needs the lang attribute, which <html lang="en"> provides */
+  -webkit-hyphens: auto;
+  hyphens: auto;
   -webkit-text-size-adjust: 100%;
+}
+
+/* justification only helps running prose; short labels and headings stay flush left */
+h1, h2, h3, h4,
+.nav, .nav a,
+.hero__eyebrow, .hero__role,
+.entry__when, .entry__org,
+.awards .year,
+.chips li,
+.links, .links a,
+.media__list .lang,
+.pub-metrics,
+.footer__meta {
+  text-align: left;
+  -webkit-hyphens: manual;
+  hyphens: manual;
 }
 
 img { max-width: 100%; height: auto; }
