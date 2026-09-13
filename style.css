@@ -45,6 +45,8 @@
 
 *, *::before, *::after { box-sizing: border-box; }
 
+[hidden] { display: none !important; }
+
 html { scroll-behavior: smooth; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
@@ -386,6 +388,14 @@ h3.sub:first-of-type { margin-top: 0; }
   color: var(--muted);
   border-left: 2px solid var(--sand);
   padding-left: .85rem;
+}
+
+.pub-metrics {
+  margin: -.4rem 0 1.1rem;
+  font-family: var(--font-sans);
+  font-size: .82rem;
+  letter-spacing: .02em;
+  color: var(--muted);
 }
 
 /* ---------------------------------------------------------
