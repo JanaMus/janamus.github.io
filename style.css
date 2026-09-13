@@ -509,6 +509,99 @@ h3.sub:first-of-type { margin-top: 0; }
 .footer__meta { font-size: .88rem; color: var(--hero-muted); }
 
 /* ---------------------------------------------------------
+   Software
+   --------------------------------------------------------- */
+
+.software {
+  background: var(--card);
+  border: 1px solid var(--rule);
+  border-left: 3px solid var(--sand);
+  border-radius: var(--radius);
+  padding: 1.4rem 1.6rem;
+}
+.software h3 {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: var(--accent);
+}
+.software__tagline { margin: .5rem 0 0; max-width: 62ch; }
+
+.software__meta {
+  list-style: none;
+  margin: 1.1rem 0 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: .4rem 1.8rem;
+}
+.software__meta b {
+  display: block;
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+.software__meta span {
+  font-family: var(--font-sans);
+  font-size: .7rem;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.software__note { margin: 1.2rem 0 0; font-size: .95rem; color: var(--muted); }
+
+/* pill links on a light background (the hero uses .links instead) */
+.btns { list-style: none; margin: 1.2rem 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: .5rem; }
+.btns a {
+  display: inline-block;
+  font-family: var(--font-sans);
+  font-size: .85rem;
+  text-decoration: none;
+  color: var(--accent);
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  padding: .35rem .9rem;
+  transition: background .2s ease, border-color .2s ease, color .2s ease;
+}
+.btns a:hover,
+.btns a:focus-visible { background: var(--sand); border-color: var(--sand); color: var(--navy-deep); }
+
+/* ---------------------------------------------------------
+   Media coverage
+   --------------------------------------------------------- */
+
+.media {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+  gap: 1.6rem 2.5rem;
+}
+.media__col h4 {
+  margin: 0 0 .5rem;
+  font-family: var(--font-sans);
+  font-size: .76rem;
+  font-weight: 600;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  padding-bottom: .35rem;
+  border-bottom: 1px solid var(--rule);
+}
+.media__list { list-style: none; margin: 0; padding: 0; }
+.media__list li { padding: .45rem 0; }
+.media__list a {
+  font-family: var(--font-sans);
+  font-size: .92rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+.media__list a:hover,
+.media__list a:focus-visible { text-decoration: underline; }
+.media__list span { display: block; font-size: .92rem; color: var(--muted); }
+
+/* ---------------------------------------------------------
    Narrow screens
    --------------------------------------------------------- */
 
@@ -560,6 +653,9 @@ h3.sub:first-of-type { margin-top: 0; }
   .full-list { border: 0; }
   .full-list > *:not(summary) { padding-inline: 0; }
 
+  .software { background: none; border-color: #ccc; }
+  .btns a { border-color: #bbb; color: #123c69; }
+  .media, .software, .media__col { break-inside: avoid; page-break-inside: avoid; }
   .section { border-top: 0; padding-block: .9rem; }
   .entry, .awards li, .pubs li { break-inside: avoid; page-break-inside: avoid; }
   .section h2 { break-after: avoid; page-break-after: avoid; }
