@@ -45,6 +45,9 @@
 
 *, *::before, *::after { box-sizing: border-box; }
 
+/* must beat the display rules below, e.g. .stats li { display: flex } */
+[hidden] { display: none !important; }
+
 html { scroll-behavior: smooth; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
@@ -181,6 +184,14 @@ a:hover { text-decoration-thickness: 2px; }
   text-transform: uppercase;
   color: var(--hero-muted);
 }
+
+.stats__src {
+  margin: .6rem 0 0;
+  font-family: var(--font-sans);
+  font-size: .74rem;
+  color: var(--hero-muted);
+}
+.stats__src a { color: var(--sand); }
 
 /* profile links */
 .links {
