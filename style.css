@@ -76,7 +76,7 @@ h1, h2, h3, h4,
 .awards .year,
 .chips li,
 .links, .links a,
-.media__list .lang,
+.lang,
 .pub-metrics,
 .footer__meta {
   text-align: left;
@@ -467,18 +467,7 @@ h3.sub:first-of-type { margin-top: 0; }
    Media coverage
    --------------------------------------------------------- */
 
-.media__list { list-style: none; margin: 0; padding: 0; }
-.media__list li { padding: .45rem 0; }
-.media__list a {
-  font-family: var(--font-sans);
-  font-size: .92rem;
-  font-weight: 600;
-  text-decoration: none;
-}
-.media__list a:hover,
-.media__list a:focus-visible { text-decoration: underline; }
-.media__list span { display: block; font-size: .92rem; color: var(--muted); }
-.media__list .lang {
+.lang {
   display: inline;
   font-family: var(--font-sans);
   font-size: .74rem;
@@ -533,7 +522,6 @@ h3.sub:first-of-type { margin-top: 0; }
   .footer { background: none; color: #000; padding: 1rem 0 0; }
   .footer a { color: #123c69; }
 
-  .media__list li { break-inside: avoid; page-break-inside: avoid; }
   .section { border-top: 0; padding-block: .9rem; }
   .entry, .awards li, .pubs li { break-inside: avoid; page-break-inside: avoid; }
   .section h2 { break-after: avoid; page-break-after: avoid; }
