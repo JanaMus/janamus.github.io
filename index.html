@@ -632,7 +632,9 @@
   if (years > 0 && years < 80) { el.textContent = years; }
 })();
 
-/* Live journal-article list and bibliometrics from OpenAlex (free, no key, CORS-enabled).
+/* Live journal-article list and bibliometrics from OpenAlex. Reviews carry their own
+   type in OpenAlex, so the filter asks for articles and reviews; asking only for articles
+   dropped two of the thirteen papers. (free, no key, CORS-enabled).
    Google Scholar has no public API and blocks automated access, so it cannot be read
    from a static page. The list below is rendered server-side into the HTML as well, so
    if this request fails the visitor still sees the manually maintained list. */
@@ -686,7 +688,7 @@
   }
 
   var worksUrl = 'https://api.openalex.org/works?filter=author.id:' + AUTHOR +
-                 ',type:article&per-page=100&sort=publication_year:desc' +
+                 ',type:article|review&per-page=100&sort=publication_year:desc' +
                  '&select=id,doi,title,display_name,publication_year,authorships,primary_location';
 
   fetch(worksUrl)
